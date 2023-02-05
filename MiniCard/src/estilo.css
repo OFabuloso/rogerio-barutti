@@ -1,0 +1,110 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  min-height: 280px;
+
+  /*background-image: linear-gradient(45deg, violet, black);*/
+  background: url(/RogerioBarutti/MiniCard/src/imagens/fundo-strong.jpg) center center no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+.border {
+  height: 530px;
+  width: 310px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid rgba(199, 193, 193, 0.432);
+}
+.card {
+  opacity: 0.7;
+  height: 560px;
+  width: 340px;
+  background-color: #808080;
+  border-radius: 10px;
+  transition: background 1s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 0 15px 17px rgba(85, 79, 85, 0.781);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  filter: grayscale(22%);
+}
+  .card:hover {
+    box-shadow: 0 0 8px 10px rgba(255, 249, 249, 0.644);
+    transition: 1s;
+  }
+  .card0 {
+    background: url("/RogerioBarutti/MiniCard/src/imagens/treino-EDITED.jpeg")
+      center center no-repeat;
+    opacity: 1;
+    background-size: cover;
+  }
+  .card0:hover {
+    opacity: 1;
+    background: url("/RogerioBarutti/MiniCard/src/imagens/frontal.jpeg")
+      center no-repeat;
+    background-size: cover;
+    scale: 1.1;
+    transition: 1s;
+    filter: grayscale(10%);
+  }
+  .card0:hover h2 {
+    opacity: 1;
+  }
+  .card0:hover .fa {
+    scale: 1.2;
+    color: white;
+    opacity: 1;
+  }
+  h2 {
+    opacity: 1;
+    font-family: "Righteous", cursive;
+    font-size: 28px;
+    color: #fff;
+    margin: 20px;
+  
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+  .fa {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
+  .icons {
+    position: absolute;
+    fill: grey;
+    color: grey;
+    height: 150px;
+    top: 246px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 1;
+  }
+  
